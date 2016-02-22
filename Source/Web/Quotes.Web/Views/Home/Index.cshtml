@@ -1,5 +1,20 @@
-﻿
+﻿@model IEnumerable<Quotes.Web.ViewModels.Updates.UpdateViewModel>
 @{
     ViewBag.Title = "Home Page";
 }
-<h1>Вицове</h1>
+<h1>Newsfeed</h1>
+<ul class="items-list">
+    @foreach (var update in @Model)
+    {
+        <li class="item">
+            <strong class="text">
+                @update.Text
+            </strong>
+            <br/>
+            <span class="author">
+                by
+                <a href="#">@update.User.Username</a>
+            </span>
+        </li>
+    }
+</ul>

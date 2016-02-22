@@ -43,8 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IQuotesService.cs" />
+    <Compile Include="IUpdatesService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuotesService.cs" />
+    <Compile Include="UpdatesService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Data\Quotes.Data.Common\Quotes.Data.Common.csproj">

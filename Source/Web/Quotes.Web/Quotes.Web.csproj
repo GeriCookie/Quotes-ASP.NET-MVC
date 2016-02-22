@@ -229,6 +229,8 @@
     <Compile Include="ViewModels\Quotes\AuthorViewModel.cs" />
     <Compile Include="ViewModels\Quotes\QuoteDetailsViewModel.cs" />
     <Compile Include="ViewModels\Quotes\QuoteInputModel.cs" />
+    <Compile Include="ViewModels\Updates\UpdateViewModel.cs" />
+    <Compile Include="ViewModels\Users\UserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />

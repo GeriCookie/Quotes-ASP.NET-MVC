@@ -1,19 +1,25 @@
-﻿namespace Quotes.Web.Controllers
-{
-    using System.Linq;
-    using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Web.Mvc;
+using Quotes.Services.Data;
+using Quotes.Web.Infrastructure.Mapping;
+using Quotes.Web.ViewModels.Updates;
+using Quotes.Web.ViewModels.Users;
 
-    using Infrastructure.Mapping;
-    
+namespace Quotes.Web.Controllers
+{
     public class HomeController : BaseController
     {
-        public HomeController()
+        private readonly IUpdatesService _service;
+
+        public HomeController(IUpdatesService service)
         {
+            this._service = service;
         }
 
         public ActionResult Index()
         {
-            return this.View();
+            return this.View(this._service.All().To<UpdateViewModel>());
         }
     }
 }
