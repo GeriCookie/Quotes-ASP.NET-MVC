@@ -37,6 +37,8 @@
             //    // Assign user to admin role
             //    userManager.AddToRole(user.Id, GlobalConstants.AdministratorRoleName);
             //}
+
+
         }
     }
 }

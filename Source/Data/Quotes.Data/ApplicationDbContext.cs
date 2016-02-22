@@ -16,7 +16,19 @@
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-        
+
+        public IDbSet<Quote> Quotes { get; set; }
+
+        public IDbSet<Author> Authors { get; set; }
+
+        public IDbSet<Tag> Tags { get; set; }
+
+        public IDbSet<Favorite> Favorites { get; set; }
+
+        public IDbSet<Update> Updates { get; set; }
+
+        public IDbSet<Comment> Comments { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
