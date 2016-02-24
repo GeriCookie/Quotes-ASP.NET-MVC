@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotes.Services.Data", "Ser
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotes.Services.Web", "Services\Quotes.Services.Web\Quotes.Services.Web.csproj", "{DEAB17A2-58C1-448C-8A66-D49C3AF7FC6C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotes.MongoImporter", "Quotes.MongoImporter\Quotes.MongoImporter.csproj", "{20294D2E-2B79-4997-B103-993E1552D750}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{DEAB17A2-58C1-448C-8A66-D49C3AF7FC6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEAB17A2-58C1-448C-8A66-D49C3AF7FC6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEAB17A2-58C1-448C-8A66-D49C3AF7FC6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20294D2E-2B79-4997-B103-993E1552D750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20294D2E-2B79-4997-B103-993E1552D750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20294D2E-2B79-4997-B103-993E1552D750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20294D2E-2B79-4997-B103-993E1552D750}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
