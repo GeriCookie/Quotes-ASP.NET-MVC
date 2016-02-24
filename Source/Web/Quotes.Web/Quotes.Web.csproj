@@ -198,11 +198,13 @@
     <Compile Include="App_Start\SmsService.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AuthorsController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="App_Start\GlimpseSecurityPolicy.cs" />
     <Compile Include="Controllers\QuotesController.cs" />
+    <Compile Include="Controllers\TagsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -215,6 +217,7 @@
     <Compile Include="ViewModels\Account\ResetPasswordViewModel.cs" />
     <Compile Include="ViewModels\Account\SendCodeViewModel.cs" />
     <Compile Include="ViewModels\Account\VerifyCodeViewModel.cs" />
+    <Compile Include="ViewModels\Authors\AuthorDetailViewModel.cs" />
     <Compile Include="ViewModels\Manage\AddPhoneNumberViewModel.cs" />
     <Compile Include="ViewModels\Manage\ChangePasswordViewModel.cs" />
     <Compile Include="ViewModels\Manage\FactorViewModel.cs" />
@@ -229,6 +232,9 @@
     <Compile Include="ViewModels\Quotes\AuthorViewModel.cs" />
     <Compile Include="ViewModels\Quotes\QuoteDetailsViewModel.cs" />
     <Compile Include="ViewModels\Quotes\QuoteInputModel.cs" />
+    <Compile Include="ViewModels\Quotes\QuoteViewModel.cs" />
+    <Compile Include="ViewModels\Quotes\TagViewModel.cs" />
+    <Compile Include="ViewModels\Tags\TagDetailsViewModel.cs" />
     <Compile Include="ViewModels\Updates\UpdateViewModel.cs" />
     <Compile Include="ViewModels\Users\UserViewModel.cs" />
   </ItemGroup>
@@ -296,6 +302,8 @@
     <Content Include="Views\Quotes\Index.cshtml" />
     <Content Include="Views\Quotes\Add.cshtml" />
     <Content Include="Views\Quotes\Details.cshtml" />
+    <Content Include="Views\Authors\Details.cshtml" />
+    <Content Include="Views\Tags\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

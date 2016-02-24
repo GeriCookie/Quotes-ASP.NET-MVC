@@ -7,12 +7,8 @@ using System.Threading.Tasks;
 
 namespace Quotes.Services.Data
 {
-    public interface IQuotesService
+    public interface IAuthorsService
     {
-        Quote GetById(int id);
-
-        int Add(Quote quote);
-
-        IQueryable<Quote> All();
+        Author GetById(int id);
     }
 }

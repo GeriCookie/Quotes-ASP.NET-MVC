@@ -30,6 +30,11 @@ namespace Quotes.Services.Data
             return 0;
         }
 
+        public IQueryable<Quote> All()
+        {
+            return this.quotes.All().OrderBy(q => q.CreatedOn).Take(50);
+        }
+        
         public Quote GetById(int id)
         {
             return this.quotes.GetById(id);

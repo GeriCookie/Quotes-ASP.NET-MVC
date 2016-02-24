@@ -1,11 +1,13 @@
-﻿@model IEnumerable<Quotes.Web.ViewModels.Quotes.QuoteViewModel>
+﻿@model Quotes.Web.ViewModels.Tags.TagDetailsViewModel
+
 @{
-    ViewBag.Title = "All Quotes";
+    ViewBag.Title = "Details";
 }
 
-<h2>@ViewBag.Title</h2>
+<h2>@Model.Name</h2>
+
 <div class="container">
-    @foreach (var quote in Model)
+    @foreach (var quote in Model.Quotes)
     {
         <div class="row">
             <div class="col-md-2">
@@ -35,4 +37,4 @@
         <br />
 
     }
-</div>
+    </div>

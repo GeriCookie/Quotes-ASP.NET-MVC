@@ -1,5 +1,6 @@
 ﻿using Quotes.Data.Models;
 using Quotes.Services.Data;
+using Quotes.Web.Infrastructure.Mapping;
 using Quotes.Web.ViewModels.Quotes;
 using System;
 using System.Collections.Generic;
@@ -22,7 +23,8 @@ namespace Quotes.Web.Controllers
         // GET: Quotes
         public ActionResult Index()
         {
-            return View();
+            var quotes = this.quotes.All().To<QuoteViewModel>();
+            return View(quotes);
         }
 
         [Authorize]

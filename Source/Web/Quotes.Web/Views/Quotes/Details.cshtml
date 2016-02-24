@@ -1,1 +1,36 @@
-﻿@model dynamic
+﻿@model Quotes.Web.ViewModels.Quotes.QuoteDetailsViewModel
+@{
+    ViewBag.Title = "All Quotes";
+}
+
+<h2>@ViewBag.Title</h2>
+<div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <img class="img-circle" src="@Model.Author.ImageUrl;" />
+
+            </div>
+
+            <div class="col-md-8">
+                <h4>
+                    <a href="@Model.Url">@Model.Text</a>
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <strong>
+                    <a href="">@Model.Author.Name</a>
+                </strong>
+            </div>
+            <div>
+                @foreach (var tag in Model.Tags)
+                {
+                    <a href="@tag.Url" class="btn btn-default">@tag.Name</a>
+                }
+            </div>
+        </div>
+        <br />
+
+    
+</div>

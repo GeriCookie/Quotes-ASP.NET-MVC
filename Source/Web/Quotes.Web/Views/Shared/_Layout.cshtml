@@ -22,8 +22,8 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home", new { area = string.Empty }, null)</li>
                     <li>@Html.ActionLink("Following", "Index", "Home", new { area = string.Empty }, null)</li>
-                    <li>@Html.ActionLink("All Quote", "Index", "Home", new { area = string.Empty }, null)</li>
-                    <li>@Html.ActionLink("Add Quote", "Index", "Home", new { area = string.Empty }, null)</li>
+                    <li>@Html.ActionLink("All Quote", "Index", "Quotes", new { area = string.Empty }, null)</li>
+                    <li>@Html.ActionLink("Add Quote", "Add", "Quotes", new { area = string.Empty }, null)</li>
                     <li>@Html.ActionLink("Favorites", "Index", "Home", new { area = string.Empty }, null)</li>
                 </ul>
                 @Html.Partial("_LoginPartial")

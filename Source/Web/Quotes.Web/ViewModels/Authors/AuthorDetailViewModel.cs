@@ -1,14 +1,14 @@
 ﻿using Quotes.Data.Models;
 using Quotes.Web.Infrastructure.Mapping;
+using Quotes.Web.ViewModels.Quotes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace Quotes.Web.ViewModels.Quotes
+namespace Quotes.Web.ViewModels.Authors
 {
-    public class AuthorViewModel : IMapFrom<Author>
+    public class AuthorDetailViewModel : IMapFrom<Author>
     {
         public int Id { get; set; }
 
@@ -23,6 +23,8 @@ namespace Quotes.Web.ViewModels.Quotes
                 return string.Format("/Authors/Details/{0}", this.Id);
             }
         }
+
+        public IEnumerable<QuoteViewModel> Quotes { get; set; }
 
     }
 }
